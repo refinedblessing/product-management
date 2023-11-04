@@ -2,7 +2,9 @@ package com.tcp.productmanagement.entities;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
@@ -14,6 +16,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @Table(name = "product")
+@NoArgsConstructor
 public class Product {
     /**
      * Unique id for the product.
@@ -56,4 +59,13 @@ public class Product {
      */
     @Column(name = "max_threshold")
     private Integer maxThreshold = 0;
+
+    public Product(String name, LocalDate expiryDate, LocalDate markdownDate, Integer minThreshold, Integer quantity, Integer maxThreshold) {
+        this.name = name;
+        this.expiryDate = expiryDate;
+        this.markdownDate = markdownDate;
+        this.minThreshold = minThreshold;
+        this.quantity = quantity;
+        this.maxThreshold = maxThreshold;
+    }
 }
