@@ -1,7 +1,6 @@
 # Product Management Application
 
 This is a Product Management application that allows you to manage and monitor product information, including product details, expiration dates, markdown information, and replenishment needs. The application provides a RESTful API to perform various operations on products.
-It is currently hosted on AWS Elastic Beanstalk 👀 [here](http://safe-shelving.us-west-2.elasticbeanstalk.com/swagger-ui/index.html#/) 👀 using Swagger UI for the GUI.
 
 ## Table of Contents
 
@@ -27,7 +26,6 @@ It is currently hosted on AWS Elastic Beanstalk 👀 [here](http://safe-shelving
 ### Usage
 
 The Product Management Application provides RESTful API endpoints for various product-related operations. Below are the available API endpoints and their descriptions:
-It is currently hosted 👀 [here](http://safe-shelving.us-west-2.elasticbeanstalk.com/swagger-ui/index.html#/) 👀 using Swagger UI for the GUI.
 
 
 #### API Endpoints
